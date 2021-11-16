@@ -7,15 +7,14 @@
             box-sizing: border-box;
         }
         body {
-            margin: 10px;
+            margin: 100px 20px;
         }
         div {
             width: 100%;
-            border: 1px solid black;
             border-collapse: collapse;
         }
         .logo {
-            font-size: 40px;
+            font-size: 80px;
             text-align: center;
             font-weight: bold;
             color: gray;
@@ -23,15 +22,16 @@
             text-transform: uppercase;
         }
         .navigation {
-            font-size: 15px;
+            font-size: 20px;
             background-color: blue;
             color: white;
+            height: 25px;
         }
         .website {
             display: inline-block;
-            width: 33%;
+            width: 32%;
             text-align: left;
-            text-transform: capitalize;
+            padding-left: 10px;
         }
         .sublogo {
             display: inline-block;
@@ -43,49 +43,72 @@
             display: inline-block;
             width: 33%;
             text-align: right;
+            padding-right: 10px;
         }
         .headline {
-            font-size: 30px;
+            font-size: 55px;
             text-align: center;
             text-transform: uppercase;
             color: gray;
             font-weight: bold;
         }
         .second_table {
+            display: inline-block;
             display: grid;
             grid-auto-flow: column;
         }
         .third_table {
+            float: left;
             display: inline-block;
             width: 33%;
             border-collapse: separate;
         }
         .coupon {
+            display: inline-block;
             border: 5px dotted gray;
             vertical-align: text-top;
             text-align: center;
-            height: 350px;
+            height: 200px;
+            color: red;
         }
         .content {
+            margin-left: 50px ;
+            float: left ;
+            display: inline-block;
+            width: 30%; 
+            vertical-align: text-top;
+            padding: 10px 25px;
+        }
+        .content2 {
             float: right;
             display: inline-block;
-            width: 33%;
-            height: 100%;   
+            width: 30%;  
             vertical-align: text-top;
-            padding: 15px;
-            text-align: justify;
+            padding: 10px 10px 10px 40px;
+            margin: 0px;
+        }
+        .footer {
+            display: inline-block;
+            float: left;
+            padding: 0px;
+            margin: 0px;
         }
         img {
             width: 100%;
-            height: 350px;
+            height: 200px;
         }
         p {
-            padding: 5px 0px 0px 0px ;
+            padding: 10px 0px 0px 0px ;
             margin: 0px;
         }
         p:first-child {
             color: red;
             text-transform: capitalize;
+        }
+        .content2 p:last-child {
+            text-align: center;
+            font-weight: bold;
+            padding-top: 30px;
         }
 
     </style>
@@ -93,21 +116,21 @@
 <body>
     <div>
         <div>
-            <div class="logo">content</div>   
+            <div class="logo">the daily news</div>   
         </div>
         <div>
             <div class="navigation">
                 <div>
                     <div>
-                        <div class="website">content</div>
-                        <div class="sublogo">content</div>
-                        <div class="price">content</div>
+                        <div class="website">Schoolname.com</div>
+                        <div class="sublogo">this school's best news</div>
+                        <div class="price">$1.00</div>
                     </div>
                 </div>
             </div>   
         </div>
         <div>
-            <div class="headline">content</div>   
+            <div class="headline">your headline goes here</div>   
         </div>
         <div>
             <div>
@@ -116,10 +139,10 @@
                         <div class="third_table">
                             <div>
                                 <div>
-                                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo_1sN1471JoU5pDz7bzMEN57gjdxvzuWFKg&usqp=CAU" alt="silhouette man"></div>
+                                    <div><img src="siluetas.JPG" alt="silhouette man"></div>
                                 </div>
                                 <div>
-                                    <div class="coupon"> Content</div>
+                                    <div class="coupon"> -Coupon-</div>
                                 </div>
                             </div>
                         </div>
@@ -128,39 +151,47 @@
                                 bibbity bobbity boo-
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies orci sit amet tristique dictum. Quisque tincidunt orci id est vestibulum aliquam. Quisque vulputate enim sit amet quam blandit, sit amet dapibus ligula finibus. Sed augue ipsum, ornare in porttitor a, auctor vel nulla. Cras orci neque, tempor eget est eget, ultrices euismod risus. Suspendisse at justo consectetur nisl congue fringilla et ac sapien. Mauris tempus luctus massa ac euismod. Integer ut bibendum nunc, quis sodales nibh. Vivamus non congue diam. Etiam non massa iaculis, bibendum urna sed, ornare ex. Proin id odio vel turpis tincidunt volutpat quis et magna. Morbi id congue dui, et porttitor risus. Sed nec lectus id metus faucibus accumsan quis nec urna. Sed luctus est ac urna accumsan, vitae rhoncus nulla egestas. Nulla viverra ullamcorper vehicula. Nullam vulputate turpis quis risus imperdiet fermentum. 
+                                blah, blah, yack yack, yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever, blah, blah, yack yack, yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever,
                             </p>
                             <p>
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
+                                blah, blah, yack yack, yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever, 
                             </p>
                             <p>
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
+                                blah, blah, yack yack, yada 
+                            </p>
+                            <p>
+                                blah, blah, yack yack, yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever, 
+                            </p>
+                            <p>
+                                blah, blah, yack yack, yada 
                             </p>
                         </div>
-                        <div class="content">
+                        <div class="content2">
                             <p>
                                 bibbity bobbity boo-
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies orci sit amet tristique dictum. Quisque tincidunt orci id est vestibulum aliquam. Quisque vulputate enim sit amet quam blandit, sit amet dapibus ligula finibus. Sed augue ipsum, ornare in 
+                                blah, blah, yack yack, yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever, blah, blah, yack yack, yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever,
                             </p>
                             <p>
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
+                                blah, blah, yack yack, yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever, 
                             </p>
                             <p>
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida. 
-                                Ut gravida felis et leo semper, in pulvinar est euismod. In posuere pharetra tellus, sit amet placerat nisl tincidunt eu. Fusce faucibus nibh ac accumsan cursus. Phasellus viverra sed dui sed posuere. Donec pellentesque leo ex, eget molestie est rutrum eget. Mauris ornare nibh id libero hendrerit pretium. Quisque dictum viverra ultricies. Cras hendrerit hendrerit ligula sit amet gravida.
+                                blah, blah, yack yack, yada 
+                            </p>
+                            <p>
+                                blah, blah, yack yack, yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever, 
+                            </p>
+                            <p>
+                                By:Your Name 
                             </p>
                         </div>
                     </div>
                 </div>
             </div>   
+        </div>
+        <div>
+            <div class="footer">Copyright &#169 all rights reserved by Marius Kliukas</div>
         </div>
     </div>
 
