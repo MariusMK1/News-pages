@@ -65,6 +65,116 @@
             border-radius: 10px;
             font-weight: bold;
         }
+        div[class*="col-"]{
+            float: left;
+        }
+        .col-1 {
+            width: 8.33333333%;
+        }
+        .col-2 {
+            width: 16.66666667%;
+        }
+        .col-3 {
+            width: 25%;
+        }
+        .col-4 {
+            width: 33.33333333%;
+        }
+        .col-5 {
+            width: 41.66666667%;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .col-7 {
+            width: 58.33333333%;
+        }
+        .col-8 {
+            width: 66.66666667%;
+        }
+        .col-9 {
+            width: 75%;
+        }
+        .col-10 {
+            width: 83.33333333%;
+        }
+        .col-11 {
+            width: 91.66666667%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+        main {
+            border: 1px solid black;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .table {
+        }
+        .table2 {
+            padding: 20px 40px;
+        }
+        .table3 {
+            background-color: hotpink;
+            border-left: 2px solid black;
+        }
+        .number {
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+        }
+        .top {
+            margin: 0px 0px;
+            padding: 0px;
+            background-color: red;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            font-size: 14px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+        }
+        .center {
+            border: 1px solid gray;
+            margin: 0px 0px;
+            padding: 10px 0px;
+            color: red;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        .down {
+            margin: 0px 0px;
+            padding: 0px;
+            background-color: gray;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            font-size: 14px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+        .table4 {
+            margin-left: 0px;
+            padding: 0px 0px 0px 20px;
+        }
+        h1 {
+            padding: 0px;
+            margin: 0px;
+        }
+        .table::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+        main a:link, main a:visited {
+            color: rgb(66,139,202);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
@@ -80,6 +190,22 @@
         </p>    
     </header>
     <main>
+        <div class="table">
+            <div>
+                <div class="col-2 table2">
+                    <div class="number">
+                        <div class="top">prop it &#xf100</div>
+                        <div class="center">11</div>
+                        <div class="down">drop it &#xf103</div>
+                    </div>
+                </div>
+                <div class="col-10 table3">
+                    <div class="table4">
+                        <h1>C-SPAN rnaks presidents: Abe still on top, new schocker at the bottom <a href="https://www.google.com/">&#187</a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer>
