@@ -49,7 +49,7 @@
         }
         nav div {
             display: inline-block;
-            margin-right: 1.875em;
+            margin-right: 1.45em;
             text-transform: uppercase;
         }
         nav a:link, nav a:visited {
@@ -197,10 +197,15 @@
             text-decoration: none;
             font-size: 1em;
         }
-        @media only screen and (min-width:600px){
+        .link2 a:nth-child(2) {
+            padding: 0em 0.3em;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+        @media only screen and (min-width:800px){
             
         }
-        @media only screen and (max-width:600px){
+        @media only screen and (max-width:800px){
         /* For phones start */
         body {
             padding: 0em;
@@ -230,6 +235,11 @@
             width: 100%;
             margin: 0em;
         }
+        .link1::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
         .link1 a:link, .link1 a:visited {
             color: rgb(66,139,202);
             text-decoration: none;
@@ -237,31 +247,19 @@
             font-size: 1em;
         }
         nav {
-            padding-top: 1em;
+            padding-top: 1.5em;
             margin: 0em;
             float: left;
             width: 100%;
             text-align: center;
         }
-        nav div {
-            display: inline-block;
-            margin-right: 1.875em;
-            text-transform: uppercase;
+        .table {
+            padding: 0.625em 0em;
+            border-bottom: 1px solid gray;
         }
-        nav a:link, nav a:visited {
-            color: rgb(66,139,202);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.75em;
+        .table2 {
+            padding: 1.3em 0.5em;
         }
-        nav div:first-child a {
-            color: white;
-            text-decoration: none;
-            background-color: red;
-            padding: 0.625em 1.875em;
-            border-radius: 0.625em;
-            font-weight: bold;
-        } 
         }
         /* For phones end*/ 
     </style>
