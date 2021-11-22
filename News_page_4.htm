@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News page 4</title>
+        <style>
+           * {
+               box-sizing: border-box;
+           } 
+           body {
+               padding: 0em;
+               margin: 0em
+           }
+           .slogan {
+               background-color: lightblue;
+           }
+           .moto {
+                background-color: lightyellow;
+           }
+           .profile {
+                background-color: lightcoral;
+                text-align: center;
+                padding: 1em;
+                margin: 0em;
+           }
+           .img {
+               padding: 0em 0em 0.7em 0em;
+               margin: 0em;
+           }
+           img {
+               border: 5px solid lightgray;
+           }
+           .name {
+               text-transform: uppercase;
+           }
+           .position {
+               text-transform: capitalize;
+               font-weight: bold;
+           }
+           .email {
+                padding: 0.4em 0em;
+           }
+
+            /* PC */
+            @media only screen and (min-width:600px){
+                body {
+                    background-color: lightgreen;
+                }
+                div[class*="col-"]{
+                    float: left;
+                }
+                .col-pc-1 {
+                    width: 10%;
+                }
+                .col-pc-2 {
+                    width: 20%;
+                }
+                .col-pc-3 {
+                    width: 30%;
+                }
+                .col-pc-4 {
+                    width: 40%;
+                }
+                .col-pc-5 {
+                    width: 50%;
+                }
+                .col-pc-6 {
+                    width: 60%;
+                }
+                .col-pc-7 {
+                    width: 70%;
+                }
+                .col-pc-8 {
+                    width: 80%;
+                }
+                .col-pc-9 {
+                    width: 90%;
+                }
+                .col-pc-10 {
+                    width: 100%;
+                }
+            }
+            /* Phone */
+            @media only screen and (max-width:600px){
+                body {
+                    background-color: green;
+                }
+                div[class*="col-"]{
+                    float: left;
+                }
+                .col-ph-1 {
+                    width: 10%;
+                }
+                .col-ph-2 {
+                    width: 20%;
+                }
+                .col-ph-3 {
+                    width: 30%;
+                }
+                .col-ph-4 {
+                    width: 40%;
+                }
+                .col-ph-5 {
+                    width: 50%;
+                }
+                .col-ph-6 {
+                    width: 60%;
+                }
+                .col-ph-7 {
+                    width: 70%;
+                }
+                .col-ph-8 {
+                    width: 80%;
+                }
+                .col-ph-9 {
+                    width: 90%;
+                }
+                .col-ph-10 {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="slogan col-pc-7 col-ph-10">We do everything with our core valuse of honesty, hard work, and trus.</div>
+            <div class="moto col-pc-3 col-ph-10">We believe these characteristics should influence everything we do in business and in life. we sincerely enjoy the work we do, and our clients get to reap the benefits.</div>
+        </div>
+        <div class="main">
+            <div class="profile col-pc-2 col-ph-5">
+                <div class="img"><img src="./faces/face1.PNG" alt="Eric downs"></div>
+                <div class="name">eric downs</div>
+                <div class="position">creative director</div>
+                <div class="email">eric@graindmortar.com</div>
+            </div>
+            <div class="profile col-pc-2 col-ph-5">content</div>
+            <div class="profile col-pc-2 col-ph-5">content</div>
+            <div class="profile col-pc-2 col-ph-5">content</div>
+            <div class="profile col-pc-2 col-ph-5">content</div>
+        </div>
+    </body>
+</html>
