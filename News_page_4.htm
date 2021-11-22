@@ -10,7 +10,13 @@
            } 
            body {
                padding: 0em;
-               margin: 0em
+               margin: 0em;
+               background-image: url(./faces/bacgroundfor4.png);
+               background-repeat: repeat-y repeat-x;
+           }
+           .header {
+               padding: 0em;
+               margin: 0em;
            }
            .header::after {
                 clear: both;
@@ -18,19 +24,21 @@
                 display: table;
            }
            .slogan {
-               background-color: lightblue;
-               padding: 0em;
+               padding: 1em 1em 1em 1em;
                margin: 0em;
            }
            h1 {
                margin: 0em;
                padding: 0em;
+               color: gray;
+               font-weight: normal;
            }
-           .slogan span {
+           h1 span {
                font-weight: bold;
            }
            .moto {
-                background-color: lightyellow;
+                padding: 1em 1em 1em 1em;
+                margin: 0em;
            }
            .profile {
                 background-color: lightcoral;
@@ -40,7 +48,7 @@
            }
            .img {
                padding: 0em 0em 0.5em 0em;
-               margin: 0em;
+               margin: 0em 0em 0em 0em;
            }
            img {
                border: 5px solid lightgray;
@@ -62,7 +70,6 @@
             /* PC */
             @media only screen and (min-width:600px){
                 body {
-                    background-color: lightgreen;
                 }
                 div[class*="col-"]{
                     float: left;
@@ -101,7 +108,6 @@
             /* Phone */
             @media only screen and (max-width:600px){
                 body {
-                    background-color: green;
                 }
                 div[class*="col-"]{
                     float: left;
