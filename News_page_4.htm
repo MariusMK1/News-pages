@@ -12,8 +12,22 @@
                padding: 0em;
                margin: 0em
            }
+           .header::after {
+                clear: both;
+                content: "";
+                display: table;
+           }
            .slogan {
                background-color: lightblue;
+               padding: 0em;
+               margin: 0em;
+           }
+           h1 {
+               margin: 0em;
+               padding: 0em;
+           }
+           .slogan span {
+               font-weight: bold;
            }
            .moto {
                 background-color: lightyellow;
@@ -25,11 +39,14 @@
                 margin: 0em;
            }
            .img {
-               padding: 0em 0em 0.7em 0em;
+               padding: 0em 0em 0.5em 0em;
                margin: 0em;
            }
            img {
                border: 5px solid lightgray;
+               width: 100%;
+               padding: 0em 0em 0em 0em;
+               margin: 0em 0em 0em 0em;
            }
            .name {
                text-transform: uppercase;
@@ -124,7 +141,9 @@
     </head>
     <body>
         <div class="header">
-            <div class="slogan col-pc-7 col-ph-10">We do everything with our core valuse of honesty, hard work, and trus.</div>
+            <div class="slogan col-pc-7 col-ph-10">
+                <h1>We do everything with our core valuse of <span>honesty,</span> hard <span>work,</span> and <span>trust.</span></h1>
+            </div>
             <div class="moto col-pc-3 col-ph-10">We believe these characteristics should influence everything we do in business and in life. we sincerely enjoy the work we do, and our clients get to reap the benefits.</div>
         </div>
         <div class="main">
@@ -134,10 +153,30 @@
                 <div class="position">creative director</div>
                 <div class="email">eric@graindmortar.com</div>
             </div>
-            <div class="profile col-pc-2 col-ph-5">content</div>
-            <div class="profile col-pc-2 col-ph-5">content</div>
-            <div class="profile col-pc-2 col-ph-5">content</div>
-            <div class="profile col-pc-2 col-ph-5">content</div>
+            <div class="profile col-pc-2 col-ph-5">
+                <div class="img"><img src="./faces/face2.PNG" alt="Eric downs"></div>
+                <div class="name">eric downs</div>
+                <div class="position">creative director</div>
+                <div class="email">eric@graindmortar.com</div>
+            </div>
+            <div class="profile col-pc-2 col-ph-5">
+                <div class="img"><img src="./faces/face3.PNG" alt="Eric downs"></div>
+                <div class="name">eric downs</div>
+                <div class="position">creative director</div>
+                <div class="email">eric@graindmortar.com</div>
+            </div>
+            <div class="profile col-pc-2 col-ph-5">
+                <div class="img"><img src="./faces/face4.PNG" alt="Eric downs"></div>
+                <div class="name">eric downs</div>
+                <div class="position">creative director</div>
+                <div class="email">eric@graindmortar.com</div>
+            </div>
+            <div class="profile col-pc-2 col-ph-5">
+                <div class="img"><img src="./faces/face5.PNG" alt="Eric downs"></div>
+                <div class="name">eric downs</div>
+                <div class="position">creative director</div>
+                <div class="email">eric@graindmortar.com</div>
+            </div>
         </div>
     </body>
 </html>
