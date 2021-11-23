@@ -1,188 +1,221 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>News page 4</title>
-        <style>
-           * {
-               box-sizing: border-box;
-           } 
-           body {
-               padding: 0em;
-               margin: 0em;
-               background-image: url(./faces/bacgroundfor4.png);
-               background-repeat: repeat-y repeat-x;
-           }
-           .header {
-               padding: 0em;
-               margin: 0em;
-           }
-           .header::after {
-                clear: both;
-                content: "";
-                display: table;
-           }
-           .slogan {
-               padding: 1em 1em 1em 1em;
-               margin: 0em;
-           }
-           h1 {
-               margin: 0em;
-               padding: 0em;
-               color: gray;
-               font-weight: normal;
-           }
-           h1 span {
-               font-weight: bold;
-           }
-           .moto {
-                padding: 1em 1em 1em 1em;
-                margin: 0em;
-           }
-           .profile {
-                background-color: lightcoral;
-                text-align: center;
-                padding: 1em;
-                margin: 0em;
-           }
-           .img {
-               padding: 0em 0em 0.5em 0em;
-               margin: 0em 0em 0em 0em;
-           }
-           img {
-               border: 5px solid lightgray;
-               padding: 0em 0em 0em 0em;
-               margin: 0em 0em 0em 0em;
-               width: 100%;
-           }
-           .name {
-               text-transform: uppercase;
-           }
-           .position {
-               text-transform: capitalize;
-               font-weight: bold;
-           }
-           .email {
-                padding: 0.4em 0em;
-           }
 
-            /* PC */
-            @media only screen and (min-width:600px){
-                body {
-                }
-                div[class*="col-"]{
-                    float: left;
-                }
-                .col-pc-1 {
-                    width: 10%;
-                }
-                .col-pc-2 {
-                    width: 20%;
-                }
-                .col-pc-3 {
-                    width: 30%;
-                }
-                .col-pc-4 {
-                    width: 40%;
-                }
-                .col-pc-5 {
-                    width: 50%;
-                }
-                .col-pc-6 {
-                    width: 60%;
-                }
-                .col-pc-7 {
-                    width: 70%;
-                }
-                .col-pc-8 {
-                    width: 80%;
-                }
-                .col-pc-9 {
-                    width: 90%;
-                }
-                .col-pc-10 {
-                    width: 100%;
-                }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News page 4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding: 0em;
+            margin: 0em;
+            background-image: url(./faces/bacgroundfor4.png);
+            background-repeat: repeat-y repeat-x;
+        }
+        
+        .header {
+            padding: 0em;
+            margin: 0em;
+        }
+        
+        .header::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+        
+        .slogan {
+            padding: 1em 1em 1em 1em;
+            margin: 0em;
+        }
+        
+        h1 {
+            font-family: "Courier New", Times, monospace;
+
+            margin: 0em;
+            padding: 0em;
+            color: gray;
+            font-weight: normal;
+        }
+        
+        h1 span {
+            font-weight: bold;
+        }
+        
+        .moto {
+            padding: 1em 1em 1em 1em;
+            margin: 0em;
+        }
+        
+        .profile {
+            text-align: center;
+            padding: 1em;
+            margin: 0em;
+        }
+        
+        .img {
+            width: 100%;
+            padding-top: 100%;
+            background-size: cover;
+            border: 5px solid lightgray;
+        }
+        
+        .img1 {
+            background-image: url(./faces/face1.PNG);
+        }
+        
+        .img2 {
+            background-image: url(./faces/face2.PNG);
+        }
+        
+        .img3 {
+            background-image: url(./faces/face3.PNG);
+        }
+        
+        .img4 {
+            background-image: url(./faces/face4.PNG);
+        }
+        
+        .img5 {
+            background-image: url(./faces/face5.PNG);
+        }
+        
+        .name {
+            margin-top: 0.5em;
+            text-transform: uppercase;
+        }
+        
+        .position {
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+        
+        .email {
+            padding: 0.4em 0em;
+        }
+        /* PC */
+        
+        @media only screen and (min-width:600px) {
+            body {}
+            div[class*="col-"] {
+                float: left;
             }
-            /* Phone */
-            @media only screen and (max-width:600px){
-                body {
-                }
-                div[class*="col-"]{
-                    float: left;
-                }
-                .col-ph-1 {
-                    width: 10%;
-                }
-                .col-ph-2 {
-                    width: 20%;
-                }
-                .col-ph-3 {
-                    width: 30%;
-                }
-                .col-ph-4 {
-                    width: 40%;
-                }
-                .col-ph-5 {
-                    width: 50%;
-                }
-                .col-ph-6 {
-                    width: 60%;
-                }
-                .col-ph-7 {
-                    width: 70%;
-                }
-                .col-ph-8 {
-                    width: 80%;
-                }
-                .col-ph-9 {
-                    width: 90%;
-                }
-                .col-ph-10 {
-                    width: 100%;
-                }
+            .col-pc-1 {
+                width: 10%;
             }
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <div class="slogan col-pc-7 col-ph-10">
-                <h1>We do everything with our core valuse of <span>honesty,</span> hard <span>work,</span> and <span>trust.</span></h1>
-            </div>
-            <div class="moto col-pc-3 col-ph-10">We believe these characteristics should influence everything we do in business and in life. we sincerely enjoy the work we do, and our clients get to reap the benefits.</div>
+            .col-pc-2 {
+                width: 20%;
+            }
+            .col-pc-3 {
+                width: 30%;
+            }
+            .col-pc-4 {
+                width: 40%;
+            }
+            .col-pc-5 {
+                width: 50%;
+            }
+            .col-pc-6 {
+                width: 60%;
+            }
+            .col-pc-7 {
+                width: 70%;
+            }
+            .col-pc-8 {
+                width: 80%;
+            }
+            .col-pc-9 {
+                width: 90%;
+            }
+            .col-pc-10 {
+                width: 100%;
+            }
+        }
+        /* Phone */
+        
+        @media only screen and (max-width:600px) {
+            body {}
+            div[class*="col-"] {
+                float: left;
+            }
+            .col-ph-1 {
+                width: 10%;
+            }
+            .col-ph-2 {
+                width: 20%;
+            }
+            .col-ph-3 {
+                width: 30%;
+            }
+            .col-ph-4 {
+                width: 40%;
+            }
+            .col-ph-5 {
+                width: 50%;
+            }
+            .col-ph-6 {
+                width: 60%;
+            }
+            .col-ph-7 {
+                width: 70%;
+            }
+            .col-ph-8 {
+                width: 80%;
+            }
+            .col-ph-9 {
+                width: 90%;
+            }
+            .col-ph-10 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="slogan col-pc-7 col-ph-10">
+            <h1>We do everything with our core valuse of <span>honesty,</span> hard <span>work,</span> and <span>trust.</span></h1>
         </div>
-        <div class="main">
-            <div class="profile col-pc-2 col-ph-5">
-                <div class="img"><img src="./faces/face1.PNG" alt="Eric downs"></div>
-                <div class="name">eric downs</div>
-                <div class="position">creative director</div>
-                <div class="email">eric@graindmortar.com</div>
+        <div class="moto col-pc-3 col-ph-10">We believe these characteristics should influence everything we do in business and in life. we sincerely enjoy the work we do, and our clients get to reap the benefits.</div>
+    </div>
+    <div class="main">
+        <div class="profile col-pc-2 col-ph-5">
+            <div class="img img1">
             </div>
-            <div class="profile col-pc-2 col-ph-5">
-                <div class="img"><img src="./faces/face2.PNG" alt="Eric downs"></div>
-                <div class="name">eric downs</div>
-                <div class="position">creative director</div>
-                <div class="email">eric@graindmortar.com</div>
-            </div>
-            <div class="profile col-pc-2 col-ph-5">
-                <div class="img"><img src="./faces/face3.PNG" alt="Eric downs"></div>
-                <div class="name">eric downs</div>
-                <div class="position">creative director</div>
-                <div class="email">eric@graindmortar.com</div>
-            </div>
-            <div class="profile col-pc-2 col-ph-5">
-                <div class="img"><img src="./faces/face4.PNG" alt="Eric downs"></div>
-                <div class="name">eric downs</div>
-                <div class="position">creative director</div>
-                <div class="email">eric@graindmortar.com</div>
-            </div>
-            <div class="profile col-pc-2 col-ph-5">
-                <div class="img"><img src="./faces/face5.PNG" alt="Eric downs"></div>
-                <div class="name">eric downs</div>
-                <div class="position">creative director</div>
-                <div class="email">eric@graindmortar.com</div>
-            </div>
+            <div class="name">eric downs</div>
+            <div class="position">creative director</div>
+            <div class="email">eric@graindmortar.com</div>
         </div>
-    </body>
+        <div class="profile col-pc-2 col-ph-5">
+            <div class="img img2"></div>
+            <div class="name">mike dekay</div>
+            <div class="position">creative director</div>
+            <div class="email">mike@graindmortar.com</div>
+        </div>
+        <div class="profile col-pc-2 col-ph-5">
+            <div class="img img3"></div>
+            <div class="name">kristin dekay</div>
+            <div class="position">operations director</div>
+            <div class="email">kristin@graindmortar.com</div>
+        </div>
+        <div class="profile col-pc-2 col-ph-5">
+            <div class="img img4"></div>
+            <div class="name">miranda bouck</div>
+            <div class="position">designer</div>
+            <div class="email">miranda@graindmortar.com</div>
+        </div>
+        <div class="profile col-pc-2 col-ph-5">
+            <div class="img img5"></div>
+            <div class="name">jesse harding</div>
+            <div class="position">designer</div>
+            <div class="email">jesse@graindmortar.com</div>
+        </div>
+    </div>
+</body>
+
 </html>
