@@ -1,12 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News page 5</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                padding: 0em;
+                margin: 0em;
+                font-family: Verdana, Helvetica, sans-serif;
+            }
+            .container1 {
+                padding: 0em 1em;
+                width: 100%;
+            }
+            .container1::after {
+                clear: both;
+                content: "";
+                display: table;
+            }
+            .container2 {
+                padding: 0em;
+                margin: 0em;
+            }
+            .container3 {
+                padding: 0em;
+                margin: 0em;
+            }
+            .container3 img {
+                margin: 0em;
+                padding: 0em;
+                width: 100%;
+            }
+            h1 {
+                padding: 1.5em 0em 0em 0em;
+                margin: 0em;
+                font-size: 3em;
+            }
+            p {
+                padding: 0em;
+                margin: 0em;
+                color: grey;
+            }
+            .container1 p:first-of-type {
+                padding: 1.5em 0em;
+                font-size: 1.5em;
+            }
+            .container1 p:last-of-type{
+                padding: 1.5em 0em;
+            }
+            .links {
+            }
+            .container4 {
+                padding: 0em;
+            }
+            .container4::after {
+                clear: both;
+                content: "";
+                display: table;
+            }
+            .container5 {
+                margin: 0em;
+                padding: 1em;
+            }
+            .img {
+            }
+            .container5 img {
+                margin: 0em;
+                padding: 4px;
+                width: 100%;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            div[class*="col-"]{
+            float: left;
+            }
+            .col-1 {
+                width: 8.33333333%;
+            }
+            .col-2 {
+                width: 16.66666667%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33333333%;
+            }
+            .col-5 {
+                width: 41.66666667%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+            .col-7 {
+                width: 58.33333333%;
+            }
+            .col-8 {
+                width: 66.66666667%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33333333%;
+            }
+            .col-11 {
+                width: 91.66666667%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="container2 col-6">
+                <h1>about me</h1>
+                <p>I'm a UI Designer and Front End Developer from Sydney, Australia</p>
+                <p>I enjoy taking complex problems and turning them into simple and beautiful interface designs. I also live the lgic and structure of coding and always strive to write elegant and efficien code, whether it be HTML, CSS or jQuery</p>
+                <p>When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting some hoops</p>
+                <div class="links">content</div>
+            </div> 
+            <div class="container3 col-6">
+                <div class="background"><img src="./faces/backgroundfor5.PNG" alt=""></div>
+            </div>
+        </div>
+        <div class="container4">
+            <div class="col-2 container5">
+                <div class="img"><img src="./faces/img1.PNG" alt="keyboard"></div>
+            </div>
+            <div class="col-2 container5">
+                <div class="img"><img src="./faces/img2.PNG" alt="face"></div>
+            </div>
+            <div class="col-2 container5">
+                <div class="img"><img src="./faces/img3.PNG" alt="mug"></div>
+            </div>
+            <div class="col-2 container5">
+                <div class="img"><img src="./faces/img4.PNG" alt="gun"></div>
+            </div>
+            <div class="col-2 container5">
+                <div class="img"><img src="./faces/img5.PNG" alt="mac"></div>
+            </div>
+            <div class="col-2 container5">
+                <div class="img"><img src="./faces/img6.PNG" alt="burger"></div>
+            </div>
+        </div>
+        
+    </body>
 </html>
